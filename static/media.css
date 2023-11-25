@@ -1,0 +1,51 @@
+@media only screen and (max-width: 600px){
+    .row-1 img{
+        max-width: 100px;
+        min-height: 200px;
+    
+    }
+    .row-2 img{
+        max-width: 100px;
+        min-height: 200px;
+    }
+    .step{
+        min-height: 60px;
+        margin: 5px;
+    }
+    .row-casino{
+        position: relative;
+    }
+    .row-ca-1, .row-ca-2{
+        display: grid;
+        width: 100%;
+        margin: 0;
+    }
+    .circle{
+        max-width: 120px;
+        max-height: 100px;
+    }
+    .title-headline{
+        scale: 0.9;
+    }
+        .desktop-video {
+        display: none;
+    }
+
+    .mobile-video {
+        display: block;
+        width: 100%;
+        height: auto; /* Ajuste conforme necessário */
+    }
+    .texto-sobre-video{
+        display: show;
+        scale: 0.6;
+        left: 20%;
+        top: 25%;
+    }
+    .espaco-mobile{
+        background-color: #e23301;
+        height: 350px;
+        width: 100%;
+    }
+
+}
