@@ -1,4 +1,6 @@
 @media only screen and (max-width: 600px){
+
+    
     .row-1 img{
         max-width: 100px;
         min-height: 200px;
@@ -25,7 +27,7 @@
         max-height: 100px;
     }
     .title-headline{
-        scale: 0.9;
+        scale: 0.8;
     }
         .desktop-video {
         display: none;
@@ -33,19 +35,31 @@
 
     .mobile-video {
         display: block;
-        width: 100%;
+        width: 120%;
         height: auto; /* Ajuste conforme necessário */
     }
     .texto-sobre-video{
-        display: show;
+        
+        display: block;
         scale: 0.6;
         left: 20%;
-        top: 25%;
+        top: 15%;
+        z-index: 9999;
+        padding-right: -30%;
     }
     .espaco-mobile{
         background-color: #e23301;
         height: 350px;
-        width: 100%;
+        width: 120%;
+        display: block;
+        margin: 0;
+
+    
     }
+    .espaco{
+        display: none;
+    }
+
+
 
 }

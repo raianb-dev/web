@@ -235,6 +235,6 @@ footer{
   }
   
   .reg {
-    animation: pulsar 2s infinite; /* 3 segundos por ciclo */
+    animation: pulsar 3s infinite; /* 3 segundos por ciclo */
     animation-delay: 0s, 3s; /* Inicia imediatamente, depois de 3 segundos, e assim por diante */
   }
