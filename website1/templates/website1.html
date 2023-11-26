@@ -38,11 +38,11 @@
     <div class="painel">
 
 
-        <video class="desktop-video" autoplay muted loop>
+        <video  type="video/mp4" class="desktop-video" autoplay muted loop poster="{% static 'img/desktop.png' %}">
             <source src="{% static 'img/desktop.mp4' %}" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
         </video>
-        <video class="mobile-video" autoplay muted loop>
+        <video type="video/mp4" class="mobile-video" autoplay muted loop>
             <source src="{% static 'img/mobile.mp4' %}" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
         </video>
