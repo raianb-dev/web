@@ -132,6 +132,7 @@ video {
 .oferta, .bonus{
     font-weight: 40;
     font-size: 30px;
+    margin: 0;
 }
 
 .texto-sobre-video img{
@@ -155,6 +156,7 @@ video {
     
 }
 .reg{
+    margin-top: 20px;
     cursor: pointer;
     transition: 400ms;
 }
@@ -237,4 +239,10 @@ footer{
   .reg {
     animation: pulsar 3s infinite; /* 3 segundos por ciclo */
     animation-delay: 0s, 3s; /* Inicia imediatamente, depois de 3 segundos, e assim por diante */
+  }
+  .espaco-mobile img{
+    display: none
+  }
+  .reg-mobile{
+    display: none;
   }

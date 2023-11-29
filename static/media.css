@@ -3,15 +3,15 @@
     
     .row-1 img{
         max-width: 100px;
-        min-height: 200px;
+        min-height: 190px;
     
     }
     .row-2 img{
         max-width: 100px;
-        min-height: 200px;
+        min-height: 19px;
     }
     .step{
-        min-height: 60px;
+        min-height: 50px;
         margin: 5px;
     }
     .row-casino{
@@ -35,12 +35,12 @@
 
     .mobile-video {
         display: block;
-        width: 120%;
+        width: 100%;
         height: auto; /* Ajuste conforme necessário */
     }
     .texto-sobre-video{
         
-        display: block;
+        display: none;
         scale: 0.6;
         left: 20%;
         top: 15%;
@@ -49,17 +49,60 @@
     }
     .espaco-mobile{
         background-color: #e23301;
-        height: 350px;
-        width: 120%;
+        height: 220px;
+        width: 100%;
         display: block;
         margin: 0;
 
     
     }
+    
     .espaco{
         display: none;
     }
 
+    .espaco-mobile img{
+        display: block;
+        width: 90%;
+        scale: 1.1;
+        transform: translateY(60px);
+        transform: translateX(10px);
+        z-index: 9999999;
+        margin-top: 40px;
+        margin-left: 5%;
+      }
+      .reg-mobile{
+        display: block;
+        margin: 0;
+        scale: 0.7;
+        transform: translateY(-200px);
+      }
+      .reg-mobile input{
+        font-size: 25px;
+        margin-left: 25%;
+        background: transparent;
+        border: 0;
+        color: gold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: -60px;
+        transform: translateY(-190px);
 
+      }
 
+      @keyframes pulsar {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+      
+      .reg-mobile {
+        animation: pulsar 3s infinite; /* 3 segundos por ciclo */
+        animation-delay: 0s, 3s; /* Inicia imediatamente, depois de 3 segundos, e assim por diante */
+      }
+      .reg-mobile img{
+        transform: translateY(-120px);
+      }
 }
