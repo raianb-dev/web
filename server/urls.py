@@ -3,9 +3,19 @@ from django.contrib import admin
 from django.urls import path
 from website1 import views as views_website
 from middleware import views as views_notfound
+from website2 import views as views_website2
+
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views_website.redirect, name='website1'),
-    path('<path:path>', views_notfound.redirect, name='404')  # Alterado para <path:path>
+    path('', views_website.redirect, name='index'),
+    path('pt/', views_website.redirect, name='website1'),
+    path('ca/', views_website2.redirect, name='website2'),
+
+    path('ca/<path:undefined_path>', views_notfound.custom_redirect, name='CA'),
+    path('pt/<path:undefined_path>', views_notfound.custom_redirect, name='PT'),
+    path('pixel/', views_website.pixel, name='pixel'),
+    path('pixel2/', views_website.pixel2, name='pixel2'),
+
 ]
+

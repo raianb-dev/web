@@ -9,23 +9,6 @@
     <link rel="stylesheet" href="{% static 'media.css' %}">
     <title>150% BÔNUS DEPÓSITO</title>
     <link rel="icon" href="{% static 'img/game_1.jpeg' %}" type="image/x-icon" sizes="16x16 32x32">
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '3071007549701397');
-        fbq('track', 'PageView');
-        fbq('track', 'ViewContent');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=3071007549701397&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
 
     </head>
     
@@ -41,12 +24,11 @@
     <div class="espaco-mobile">
         <img src="{% static 'img/mobile.jpg' %}" alt="" srcset="">
         
-        <a href="https://solcasino.life/cb2ab781a">
-            <div class="reg-mobile">
-                <img src="{% static 'img/wolf_blaze_ticker.png' %}" alt="" srcset="">
-                <input type="button" value="REGISTRAR-SE">
-            </div>
+        <a class="reg-mobil3" href="{% url 'pixel' %}">
+            <input type="button" value="REGISTRAR-SE">
         </a>
+
+        
 
 
     </div>
@@ -55,7 +37,7 @@
                 
                 <b style="font-size: 40px; margin:0;">150% DE BÔNUS <br> DE DEPÓSITO</p>
                 <p class="bonus">+75 giros de GRAÇA! </p>
-                <a href="https://solcasino.life/cb2ab781a">
+                <a href="{% url 'pixel' %}">
                     <div class="reg">
                         <img src="{% static 'img/wolf_blaze_ticker.png' %}" alt="" srcset="">
                         <input type="button" value="REGISTRAR-SE">

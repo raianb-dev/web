@@ -63,19 +63,19 @@
 
     .espaco-mobile img{
         display: block;
-        width: 90%;
+        width: 96%;
         scale: 1.1;
         transform: translateY(60px);
         transform: translateX(10px);
         z-index: 9999999;
         margin-top: 40px;
-        margin-left: 5%;
+        margin-left: 0%;
       }
       .reg-mobile{
-        display: block;
+        display: absolute;
         margin: 0;
         scale: 0.7;
-        transform: translateY(-200px);
+
       }
       .reg-mobile input{
         font-size: 25px;
@@ -84,8 +84,7 @@
         border: 0;
         color: gold;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin-top: -60px;
-        transform: translateY(-190px);
+
 
       }
 
@@ -98,11 +97,23 @@
         }
       }
       
-      .reg-mobile {
+      .reg-mobil3 {
         animation: pulsar 3s infinite; /* 3 segundos por ciclo */
         animation-delay: 0s, 3s; /* Inicia imediatamente, depois de 3 segundos, e assim por diante */
       }
       .reg-mobile img{
         transform: translateY(-120px);
       }
+    input{
+      display: block;
+      min-height: 5vh;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+    
+    }
+    .reg-mobil3{
+      display: block;
+  }
 }
