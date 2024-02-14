@@ -6,6 +6,9 @@ body {
 
 
 }
+a{
+    text-decoration: none; 
+}
 
 .linha {
     border-bottom: 8px solid #fa0000; /* Cor da linha (preto, neste caso) e espessura da linha */
