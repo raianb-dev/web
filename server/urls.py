@@ -11,7 +11,7 @@ from mines import views as views_mines
 urlpatterns = [
     path('', views_website.redirect, name='index'),
     path('pt/', views_website.redirect, name='website1'),
-    path('sol/', views_website2.redirect, name='website2'),
+    path('strada/', views_website2.redirect, name='website2'),
     path('mines/', views_mines.redirect, name='mines'),
     
 
