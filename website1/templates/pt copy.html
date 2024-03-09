@@ -72,7 +72,7 @@
     <div class="espaco-mobile">
         <img src="{% static 'img/mobile2.png' %}" alt="" srcset="">
         
-        <a class="reg-mobil3" href="{% url 'pixel' %}">
+        <a class="reg-mobil3" href="https://stardacasino.life/c447920d3">
             <input type="button" value="REGISTRAR-SE">
         </a>
 
@@ -98,7 +98,7 @@
                 
                 <b style="font-size: 40px; margin:0;">100% DE BÔNUS <br> DE DEPÓSITO</p>
                 <p class="bonus">+75 giros de GRAÇA! </p>
-                <a href="{% url 'pixel'%}">
+                <a href="https://stardacasino.life/c447920d3">
                     <div class="reg">
                         <img src="{% static 'img/wolf_blaze_ticker.png' %}" alt="" srcset="">
                         <input type="button" value="REGISTRAR-SE">
@@ -128,7 +128,7 @@
         <center>
             <h6 class="headline">Confira todos os nossos jogos</h6>
             <h1 class="title-headline">
-                O Único Casino Que Você Precisa
+                O Único Cassino Que Você Precisa
             </h1>
             <h1 class="linha"></h1>
             <div class="row-casino">
@@ -173,7 +173,7 @@
     <center>
         <h1 class="nome">Jogos Populares</h1>
         <h1 class="linha"></h1>
-        <a href="{% url 'pixel'%}" target="_blank" rel="noopener noreferrer">
+        <a href="https://stardacasino.life/c447920d3" target="_blank" rel="noopener noreferrer">
             <div class="container">
                 <div class="row-1">
                     <img src="{% static 'img/game_1.jpeg' %}" alt="image" srcset="">
@@ -205,7 +205,7 @@
         <p>© 2024 Playspot. Todos os direitos reservados.</p>
     </footer>
     <script>
-      // Tempo em minutos
+       // Tempo em minutos
 const tempoTotal = 5;
 
 // Converter minutos para segundos
@@ -217,19 +217,21 @@ const contadorElemento = document.querySelector('.relogio');
 // Função para atualizar o contador
 function atualizarContador() {
   const minutos = Math.floor(tempoRestante / 60);
-  const segundos = tempoRestante % 60;
+  let segundos = tempoRestante % 60;
 
-  // Formatar os segundos com dois dígitos
-  const segundosFormatados = segundos.toString().padStart(2, '0');
+  // Adicionar um zero à esquerda para segundos menores que 10
+  if (segundos < 5) {
+    segundos = '0' + segundos;
+  }
 
   // Atualizar o texto do contador
-  contadorElemento.innerHTML = `${minutos}:${segundosFormatados}`;
+  contadorElemento.innerHTML = minutos + ':' + segundos;
 
   // Verificar se o tempo acabou
   if (tempoRestante === 0) {
     clearInterval(intervalo);
     // Aqui você pode adicionar código para lidar com o término do tempo
-    // alert('Tempo esgotado!');
+    alert('Tempo esgotado!');
   } else {
     tempoRestante--;
   }
@@ -237,7 +239,6 @@ function atualizarContador() {
 
 // Chamar a função atualizarContador a cada segundo
 const intervalo = setInterval(atualizarContador, 1000);
-
 
 
         var nomes = [

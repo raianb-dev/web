@@ -52,7 +52,7 @@
         height: 220px;
         width: 100%;
         display: block;
-        margin: 0;
+        margin-top: -1px;
 
     
     }
@@ -63,30 +63,18 @@
 
     .espaco-mobile img{
         display: block;
-        width: 96%;
-        scale: 1.1;
-        transform: translateY(60px);
-        transform: translateX(10px);
+        width: 100%;
+        
+        transform: translateY(80px);
+        transform: translateX(0px);
         z-index: 9999999;
-        margin-top: 40px;
+        margin-top: 0px;
         margin-left: 0%;
-      }
-      .reg-mobile{
-        display: absolute;
-        margin: 0;
-        scale: 0.7;
-
-      }
-      .reg-mobile input{
-        font-size: 25px;
-        margin-left: 25%;
-        background: transparent;
-        border: 0;
-        color: gold;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 0;
 
 
       }
+    
 
       @keyframes pulsar {
         0%, 100% {
@@ -98,15 +86,21 @@
       }
       
       .reg-mobil3 {
+        margin: 0 auto ;
+        max-width: 70%;
         animation: pulsar 3s infinite; /* 3 segundos por ciclo */
         animation-delay: 0s, 3s; /* Inicia imediatamente, depois de 3 segundos, e assim por diante */
+
       }
-      .reg-mobile img{
-        transform: translateY(-120px);
+      .reg-mobil3 input{
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        stroke: 1px black ;
       }
     input{
       display: block;
       min-height: 5vh;
+      background-color: rgb(51, 129, 218);
     }
     a{
         display: block;
@@ -115,6 +109,12 @@
     }
     .reg-mobil3{
       display: block;
+      
   }
+.oferta1, .expira, .relogio{
+  scale: 0.8;
+  margin-top: -10px;
+
+}
 
 }

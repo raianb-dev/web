@@ -112,7 +112,7 @@ video {
 
 .texto-sobre-video {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 38%;
     transform: translate(-50%, -50%);
     z-index: 99;
@@ -277,3 +277,51 @@ input {
 .reg-mobil3{
     display: none;
 }
+.contador {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+    z-index: 99;
+    color: #fb0000;
+    font-weight: bold;
+    margin-bottom: 0;
+    background-color: #232120;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 9999999999;
+  }
+.oferta1{
+    font-size: 20px;
+    color: #fff;
+    transform: translateY(-10px);
+    font-weight: lighter;
+    
+}
+  relogio {
+    animation: scrollDown 1s infinite;
+  }
+  
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .blackbox{
+    height: 130px;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+  }
+  .expira{
+    font-size: 25px;
+    color: #fff;
+    transform: translateY(10px);
+  }
