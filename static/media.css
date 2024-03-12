@@ -94,13 +94,13 @@
       }
       .reg-mobil3 input{
         font-weight: bolder;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         stroke: 1px black ;
       }
     input{
       display: block;
       min-height: 5vh;
-      background-color: rgb(51, 129, 218);
+      background-color: rgb(255, 255, 255);
     }
     a{
         display: block;
