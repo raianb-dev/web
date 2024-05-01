@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,34 @@
     <link rel="stylesheet" href="{% static 'media.css' %}">
     <title>100% BONUS SUL DEPOSITO</title>
     <link rel="icon" href="{% static 'img/game_1.jpeg' %}" type="image/x-icon" sizes="16x16 32x32">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '481459444213430');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=481459444213430&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 
+</head>
 
-    </head>
-    
 <body>
 
     <nav>
         <div class="fixed-div">
             <div class="marquee" id="nomes-aleatorios">
-                
+
             </div>
         </div>
         </div>
@@ -28,60 +47,64 @@
         <div class="relogio">5:00</div>
         <div class="oferta1">Offerta per un tempo limitato</div>
     </div>
-    
- 
+
+
 
     <div class="espaco-mobile">
         <img src="{% static 'img/mobile2.png' %}" alt="" srcset="">
-        
+
         <a class="reg-mobil3" href="https://solcasino.life/cb2ab781a">
             <input type="button" value="REGISTRATI">
         </a>
 
-        
+
 
 
     </div>
 
-        <div class="texto-sobre-video">
+    <div class="texto-sobre-video">
 
-            
-            <div class="dep-bonus" style="background-color:azure; width:70% ; margin: 0 auto" >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="green" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.46 8.288a.75.75 0 0 1 1.06 1.06l-8.53 8.53a.75.75 0 0 1-1.06 0l-4.47-4.47a.75.75 0 0 1 1.06-1.06l3.94 3.94 7.47-7.47a.75.75 0 0 1 1.06 0z"/>
-                  </svg>
-                  
-                  <p style="display: inline; color: rgb(112, 12, 12); ">Bonus sul primo deposito attivo!</p>
-                  
-            </div>
 
-              
-            <p class="oferta" >Offerta Esclusiva<br>
-                
-                <b style="font-size: 40px; margin:0;">100% BONUS <br> SUL DEPOSITO</p>
-                <p class="bonus">+75 giri GRATIS! </p>
-                <a href="https://solcasino.life/cb2ab781a">
-                    <div class="reg">
-                        <img src="{% static 'img/wolf_blaze_ticker.png' %}" alt="" srcset="">
-                        <input type="button" value="REGISTRATI">
-                    </div>
-                </a>
+        <div class="dep-bonus" style="background-color:azure; width:70% ; margin: 0 auto">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="green" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.46 8.288a.75.75 0 0 1 1.06 1.06l-8.53 8.53a.75.75 0 0 1-1.06 0l-4.47-4.47a.75.75 0 0 1 1.06-1.06l3.94 3.94 7.47-7.47a.75.75 0 0 1 1.06 0z" />
+            </svg>
 
-            </p>
+            <p style="display: inline; color: rgb(112, 12, 12); ">Bonus sul primo deposito attivo!</p>
 
-            <div class="espaco">
-                
-            </div>
         </div>
+
+
+        <p class="oferta">Offerta Esclusiva<br>
+
+            <b style="font-size: 40px; margin:0;">100% BONUS <br> SUL DEPOSITO
+        </p>
+        <p class="bonus">+75 giri GRATIS! </p>
+        <a href="https://solcasino.life/cb2ab781a">
+            <div class="reg">
+                <img src="{% static 'img/wolf_blaze_ticker.png' %}" alt="" srcset="">
+                <input type="button" value="REGISTRATI">
+            </div>
+        </a>
+
+        </p>
+
+        <div class="espaco">
+
+        </div>
+    </div>
     </b>
     <div class="painel">
 
-        <video  type="video/webm" class="desktop-video" autoplay muted loop poster="{% static 'img/poster.png' %}" >
-            <source src="https://play.spincasino.com/spc/content/shared/videos/wave/wolf_blaze_wowpot/desktop.mp4" type="video/webm">
+        <video type="video/webm" class="desktop-video" autoplay muted loop poster="{% static 'img/poster.png' %}">
+            <source src="https://play.spincasino.com/spc/content/shared/videos/wave/wolf_blaze_wowpot/desktop.mp4"
+                type="video/webm">
             Il tuo browser non supporta l'elemento video.
         </video>
         <video type="video/mp4" class="mobile-video" autoplay muted loop>
-            <source src="https://play.spincasino.com/spc/content/shared/videos/wave/wolf_blaze_wowpot/mobile.mp4" type="video/mp4">
+            <source src="https://play.spincasino.com/spc/content/shared/videos/wave/wolf_blaze_wowpot/mobile.mp4"
+                type="video/mp4">
             Il tuo browser non supporta l'elemento video.
         </video>
     </div>
@@ -156,7 +179,7 @@
                     <img src="{% static 'img/game_12.jpeg' %}" alt="image" srcset="">
                     <img src="{% static 'img/game_13.jpeg' %}" alt="image" srcset="">
                     <img src="{% static 'img/game_14.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_15.jpeg' %}" alt="image" srcset="">
+                    <center src="{% static 'img/game_15.jpeg' %}" alt="image" srcset="">
                     <img src="{% static 'img/game_16.jpeg' %}" alt="image" srcset="">
                     <img src="{% static 'img/game_17.jpeg' %}" alt="image" srcset="">
                     <img src="{% static 'img/game_18.jpeg' %}" alt="image" srcset="">
@@ -170,160 +193,160 @@
     </footer>
 
     <script>
-      // Tempo em minutos
-const tempoTotal = 5;
+        // Tempo em minutos
+        const tempoTotal = 5;
 
-// Converter minutos para segundos
-let tempoRestante = tempoTotal * 60;
+        // Converter minutos para segundos
+        let tempoRestante = tempoTotal * 60;
 
-// Elemento HTML do contador
-const contadorElemento = document.querySelector('.relogio');
+        // Elemento HTML do contador
+        const contadorElemento = document.querySelector('.relogio');
 
-// Função para atualizar o contador
-function atualizarContador() {
-  const minutos = Math.floor(tempoRestante / 60);
-  const segundos = tempoRestante % 60;
+        // Função para atualizar o contador
+        function atualizarContador() {
+            const minutos = Math.floor(tempoRestante / 60);
+            const segundos = tempoRestante % 60;
 
-  // Formatar os segundos com dois dígitos
-  const segundosFormatados = segundos.toString().padStart(2, '0');
+            // Formatar os segundos com dois dígitos
+            const segundosFormatados = segundos.toString().padStart(2, '0');
 
-  // Atualizar o texto do contador
-  contadorElemento.innerHTML = `${minutos}:${segundosFormatados}`;
+            // Atualizar o texto do contador
+            contadorElemento.innerHTML = `${minutos}:${segundosFormatados}`;
 
-  // Verificar se o tempo acabou
-  if (tempoRestante === 0) {
-    clearInterval(intervalo);
-    // Aqui você pode adicionar código para lidar com o término do tempo
-    // alert('Tempo esgotado!');
-  } else {
-    tempoRestante--;
-  }
-}
+            // Verificar se o tempo acabou
+            if (tempoRestante === 0) {
+                clearInterval(intervalo);
+                // Aqui você pode adicionar código para lidar com o término do tempo
+                // alert('Tempo esgotado!');
+            } else {
+                tempoRestante--;
+            }
+        }
 
-// Chamar a função atualizarContador a cada segundo
-const intervalo = setInterval(atualizarContador, 1000);
+        // Chamar a função atualizarContador a cada segundo
+        const intervalo = setInterval(atualizarContador, 1000);
 
 
 
-nomes = [
-"Giovanni F.",
-"Maria R.",
-"Pietro L.",
-"Luca S.",
-"Anna C.",
-"Gustavo H.",
-"Enrico S.",
-"Rai P.",
-"Carina A.",
-"Luan S.",
-"Caio V.",
-"Samara C.",
-"Aline G.",
-"Mayara R.",
-"Sonia G.",
-"Paolo H.",
-"Lisa J.",
-"Luisa O.",
-"Fernando P.",
-"Rodrigo M.",
-"Isabella C.",
-"Talita B.",
-"Luciano N.",
-"Roberto F.",
-"Mariana T.",
-"Andrea L.",
-"Giuliana S.",
-"Fabiana V.",
-"Renato B.",
-"Natalia M.",
-"Diego G.",
-"Vanessa C.",
-"Vinicius R.",
-"Renan A.",
-"Marcela P.",
-"Vittoria N.",
-"Thiago D.",
-"Andrea K.",
-"Eduardo J.",
-"Carla M.",
-"Giovanna B.",
-"Raffaele C.",
-"Bruna F.",
-"Filippo G.",
-"Mariana S.",
-"Guglielmo V.",
-"Giulia Z.",
-"Luigi F.",
-"Monica E.",
-"Carlo T.",
-"Giulio P.",
-"Marcello R.",
-"Patrizia L.",
-"Cristina N.",
-"Gabriele Q.",
-"Daniela X.",
-"Ugo W.",
-"Tatiana Y.",
-"Thiago U.",
-"Fabio I.",
-"Bruno H.",
-"Nathalie J.",
-"Leonardo K.",
-"Renata V.",
-"Marina Z.",
-"Roberto M.",
-"Amanda N.",
-"Matteo B.",
-"Fernanda C.",
-"Luca D.",
-"Vanessa E.",
-"Raffaele F.",
-"Giuseppe G.",
-"Cecilia H.",
-"Filippo I.",
-"Leandro J.",
-"Viviana L.",
-"Giovanni M.",
-"Silvia N.",
-"Marcello O.",
-"Bruno P.",
-"Eduarda Q.",
-"Bianca R.",
-"Luigi S.",
-"Fabio T.",
-"Diego U.",
-"Raffaele V.",
-"Debora X.",
-"Patrizia Y.",
-"Wesley Z.",
-"Rodolfo A.",
-"Tais B.",
-"Gabriella C.",
-"Giovanni D.",
-"Filippo E.",
-"Renata F.",
-"Beatrice G.",
-"Gustavo H.",
-"Giuliana I.",
-"Luciana J.",
-"Giuliana K.",
-"Renato L.",
-"Luana M.",
-"Marcela N.",
-"Thiago O.",
-"Luigi P.",
-"Rodrigo Q.",
-"Vanessa R.",
-"Riccardo S.",
-"Enrico T.",
-"Anna V.",
-"Camilla W.",
-"Amanda X.",
-"Isabella Y.",
-"Renan Z.",
-"Giovanni A.",
-"Mariana B."
-]
+        nomes = [
+            "Giovanni F.",
+            "Maria R.",
+            "Pietro L.",
+            "Luca S.",
+            "Anna C.",
+            "Gustavo H.",
+            "Enrico S.",
+            "Rai P.",
+            "Carina A.",
+            "Luan S.",
+            "Caio V.",
+            "Samara C.",
+            "Aline G.",
+            "Mayara R.",
+            "Sonia G.",
+            "Paolo H.",
+            "Lisa J.",
+            "Luisa O.",
+            "Fernando P.",
+            "Rodrigo M.",
+            "Isabella C.",
+            "Talita B.",
+            "Luciano N.",
+            "Roberto F.",
+            "Mariana T.",
+            "Andrea L.",
+            "Giuliana S.",
+            "Fabiana V.",
+            "Renato B.",
+            "Natalia M.",
+            "Diego G.",
+            "Vanessa C.",
+            "Vinicius R.",
+            "Renan A.",
+            "Marcela P.",
+            "Vittoria N.",
+            "Thiago D.",
+            "Andrea K.",
+            "Eduardo J.",
+            "Carla M.",
+            "Giovanna B.",
+            "Raffaele C.",
+            "Bruna F.",
+            "Filippo G.",
+            "Mariana S.",
+            "Guglielmo V.",
+            "Giulia Z.",
+            "Luigi F.",
+            "Monica E.",
+            "Carlo T.",
+            "Giulio P.",
+            "Marcello R.",
+            "Patrizia L.",
+            "Cristina N.",
+            "Gabriele Q.",
+            "Daniela X.",
+            "Ugo W.",
+            "Tatiana Y.",
+            "Thiago U.",
+            "Fabio I.",
+            "Bruno H.",
+            "Nathalie J.",
+            "Leonardo K.",
+            "Renata V.",
+            "Marina Z.",
+            "Roberto M.",
+            "Amanda N.",
+            "Matteo B.",
+            "Fernanda C.",
+            "Luca D.",
+            "Vanessa E.",
+            "Raffaele F.",
+            "Giuseppe G.",
+            "Cecilia H.",
+            "Filippo I.",
+            "Leandro J.",
+            "Viviana L.",
+            "Giovanni M.",
+            "Silvia N.",
+            "Marcello O.",
+            "Bruno P.",
+            "Eduarda Q.",
+            "Bianca R.",
+            "Luigi S.",
+            "Fabio T.",
+            "Diego U.",
+            "Raffaele V.",
+            "Debora X.",
+            "Patrizia Y.",
+            "Wesley Z.",
+            "Rodolfo A.",
+            "Tais B.",
+            "Gabriella C.",
+            "Giovanni D.",
+            "Filippo E.",
+            "Renata F.",
+            "Beatrice G.",
+            "Gustavo H.",
+            "Giuliana I.",
+            "Luciana J.",
+            "Giuliana K.",
+            "Renato L.",
+            "Luana M.",
+            "Marcela N.",
+            "Thiago O.",
+            "Luigi P.",
+            "Rodrigo Q.",
+            "Vanessa R.",
+            "Riccardo S.",
+            "Enrico T.",
+            "Anna V.",
+            "Camilla W.",
+            "Amanda X.",
+            "Isabella Y.",
+            "Renan Z.",
+            "Giovanni A.",
+            "Mariana B."
+        ]
 
         var jogos = ['Blackjack', 'Slots Wolf', 'Fortune Wheel', 'Fortune Tiger', 'Bufalo Slots'];
         var correntes = ['€', '€'];
@@ -349,4 +372,5 @@ nomes = [
         }
     </script>
 </body>
+
 </html>
