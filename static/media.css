@@ -85,7 +85,7 @@
         }
       }
       
-      .reg-mobil3 {
+      .reg-mobil3{
         margin: 0 auto ;
         max-width: 70%;
         animation: pulsar 3s infinite; /* 3 segundos por ciclo */

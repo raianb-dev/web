@@ -277,6 +277,23 @@ input {
 .reg-mobil3{
     display: none;
 }
+.reg{
+    width: 50%;
+    height: 45px;
+    position: relative;
+    background-color: #ffffff;
+    border: #df2e01;
+    border-radius: 10px;
+    margin: 0 auto
+}
+.reg input{
+    position: relative;
+    display: flex;
+    transform: translateY(03px);
+    color: #eb0000;
+    stroke: #df2e01;
+
+}
 .contador {
     font-size: 60px;
     text-align: center;
