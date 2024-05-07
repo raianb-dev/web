@@ -37,7 +37,33 @@
         display: block;
         width: 100%;
         height: auto; /* Ajuste conforme necessário */
+        padding: 0;
+        margin: 0;
     }
+    video{
+      margin-bottom: 0;
+      border: none;
+    }
+.mobile-wave {
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-wave::after {
+    content: "";
+    position: absolute;
+    bottom: -40px; /* Ajuste conforme necessário */
+    transform: translateY(15px);
+    left: 0;
+    width: 100%;
+    height: 150px; /* Altura da onda */
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23f7f7f7" fill-opacity="1" d="M0,96L60,106.7C120,117,240,139,360,165.3C480,192,600,224,720,218.7C840,213,960,171,1080,128C1200,85,1320,43,1380,21.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+
+    background-size: 100% 100%;
+    z-index: -1; /* Para colocar a onda atrás do vídeo */
+}
+
+
     .texto-sobre-video{
         
         display: none;

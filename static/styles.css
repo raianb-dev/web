@@ -259,7 +259,7 @@ input {
     align-items: center;
     justify-content: center; /* Centraliza horizontalmente */
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     min-height: 20%;
     text-align: center; /* Centraliza horizontalmente (opcional) */
     line-height: normal; /* Redefine a altura da linha para centralizar verticalmente */
@@ -278,7 +278,7 @@ input {
     display: none;
 }
 .reg{
-    width: 50%;
+    width: 80%;
     height: 45px;
     position: relative;
     background-color: #ffffff;
