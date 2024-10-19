@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 import re
-
+from django.views.decorators.csrf import csrf_exempt
 import requests
 
 from website1.models import Event_click
@@ -46,7 +46,7 @@ def pixel(request):
 
 def pixel2(request):
     return render(request, 'pixel2.html')
-
+@csrf_exempt
 def redirect_monro(request):
     if request.method == "POST":
         email = request.POST.get('email')
