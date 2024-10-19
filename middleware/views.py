@@ -6,7 +6,7 @@ def custom_redirect(request, undefined_path):
 
     # Adicione condições para redirecionar com base no idioma original
     if original_language == 'pt' and not request.path.startswith('/pt/'):
-        # Redirecione para a raiz da versão em português
+        # Redirecione para a raiz da versão em portuguêsa
         return redirect(f'/pt/{undefined_path}')
     elif original_language == 'ca' and not request.path.startswith('/ca/'):
         # Redirecione para a raiz da versão em inglês

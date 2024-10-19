@@ -11,7 +11,7 @@ a{
 }
 
 .linha {
-    border-bottom: 8px solid #fa0000; /* Cor da linha (preto, neste caso) e espessura da linha */
+    border-bottom: 8px solid #06112E; /* Cor da linha (preto, neste caso) e espessura da linha */
     max-width: 100px;
     margin-top: 10px;
     border-radius: 10px;
@@ -172,7 +172,7 @@ nav{
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 999999;
     color: rgb(30, 30, 30); /* Cor do texto na nav */
     height: 40px;
     padding: 0;
@@ -349,25 +349,26 @@ input {
     display: none;
   }
   
-  .button a{
+  .submit{
     color:white;
     font-family:Helvetica, sans-serif;
     font-weight:bold;
     font-size:36px;
     text-align: center;
     text-decoration:none;
-    background-color:#41c541;
+    background-color:#3962d3;
     display:block;
     position:relative;
     padding:20px 40px;
-    
+    scale: 0.4;
+    transform: translatey(-30px);
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     text-shadow: 0px 1px 0px #000;
-    filter: dropshadow(color=#000, offx=0px, offy=1px);
     
-    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #000;
     -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #000;
     
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -377,7 +378,7 @@ input {
   .button a:active{
     top:10px;
     background-color:#e4e3e3;
-    color: #000;
+
 
     -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
     -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
@@ -393,8 +394,19 @@ input {
     bottom:-15px;
     left:-4px;
     z-index:-1;
-    background-color:#2B1800;
+
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+  }
+
+  .email{
+    background-color: #dfdfde;
+    border: 0.5px rgb(108, 108, 108) solid;
+    color: rgb(85, 85, 85)
+  }
+
+  .email::placeholder {
+    color: rgb(18, 18, 18); /* Cor do texto do placeholder */
+    opacity: 0.6;
   }

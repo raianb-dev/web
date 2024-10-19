@@ -24,23 +24,19 @@
         </div>
         </div>
     </nav>
-    <div class="contador" id="contador">
+    <!--<div class="contador" id="contador">
         <div class="expira">EXPIRA EM</div>
-        <div class="relogio">20:00</div>
+        <div class="relogio">05:00</div>
         <div class="oferta1">Oferta por tempo limitado!</div>
-    </div>
+    </!--<div>-->
 
 
 
     <div class="espaco-mobile">
-        <img src="{% static 'img/mobile2.png' %}" alt="" srcset="">
+        <img src="{% static 'img/mobile.png' %}" alt="" srcset="">
 
         <div ontouchstart="">
-            <center>
-                <div class="button">
-                    <a href="https://mnr-ircp01.com/c73471629">Registrar-se</a>
-                  </div>
-            </center>
+
 
           </div>
 
@@ -70,6 +66,7 @@
         <p class="bonus">+75 giros de GRAÇA! </p>
         <a target="_blank" href="https://mnr-ircp01.com/c73471629">
             <div class="reg">
+
                 <input type="button" value="REGISTAR-SE">
             </div>
         </a>
@@ -97,7 +94,20 @@
         </div>
 
     </div>
+    <center>
+        <form action="{% url 'promo' %}" method="post">
+        {% csrf_token %}
 
+            <input type="hidden" name="button" value="register">
+            <br>
+            <input type="text" class="email" name="full_name" placeholder="Nome completo" required title="Preencha com nome">                
+            <br>
+            <input type="email" class="email" name="email" placeholder="Endereço de e-email" required title="Preencha com e-mail">                
+            <input type="submit" class="submit" value="Registrar-se">
+        </form>
+
+
+    </center>
 
     <div class="container-casino">
         <center>
@@ -149,41 +159,43 @@
     <center>
         <h1 class="nome">Jogos Populares</h1>
         <h1 class="linha"></h1>
-        <a href="https://record.ponetopartners.com/_Z6wQjQTISBJTamwAHGu6mWNd7ZgqdRLk/2/?pg=0&payload=" target="_blank" rel="noopener noreferrer">
+        <form action="{% url 'promo' %}" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="button" id="button" value="">
+            <input type="hidden" name="email" value="null">
+            <input type="hidden" name="full_name" value="null">
             <div class="container">
                 <div class="row-1">
-                    <img src="{% static 'img/game_1.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_2.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_3.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_4.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_5.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_6.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_7.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_8.jpeg' %}" alt="image" srcset="">
-
+                    <img src="{% static 'img/game_1.jpeg' %}" alt="image" data-value="game_1" class="clickable-image">
+                    <img src="{% static 'img/game_2.jpeg' %}" alt="image" data-value="game_2" class="clickable-image">
+                    <img src="{% static 'img/game_3.jpeg' %}" alt="image" data-value="game_3" class="clickable-image">
+                    <img src="{% static 'img/game_4.jpeg' %}" alt="image" data-value="game_4" class="clickable-image">
+                    <img src="{% static 'img/game_5.jpeg' %}" alt="image" data-value="game_5" class="clickable-image">
+                    <img src="{% static 'img/game_6.jpeg' %}" alt="image" data-value="game_6" class="clickable-image">
+                    <img src="{% static 'img/game_7.jpeg' %}" alt="image" data-value="game_7" class="clickable-image">
+                    <img src="{% static 'img/game_8.jpeg' %}" alt="image" data-value="game_8" class="clickable-image">
                 </div>
                 <div class="row-2">
-                    <img src="{% static 'img/game_10.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_11.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_12.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_13.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_14.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_15.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_16.jpeg' %}" alt="image" srcset="">
-                    <img src="{% static 'img/game_17.jpeg' %}" alt="image" srcset="">
-
+                    <img src="{% static 'img/game_10.jpeg' %}" alt="image" data-value="game_10" class="clickable-image">
+                    <img src="{% static 'img/game_11.jpeg' %}" alt="image" data-value="game_11" class="clickable-image">
+                    <img src="{% static 'img/game_12.jpeg' %}" alt="image" data-value="game_12" class="clickable-image">
+                    <img src="{% static 'img/game_13.jpeg' %}" alt="image" data-value="game_13" class="clickable-image">
+                    <img src="{% static 'img/game_14.jpeg' %}" alt="image" data-value="game_14" class="clickable-image">
+                    <img src="{% static 'img/game_15.jpeg' %}" alt="image" data-value="game_15" class="clickable-image">
+                    <img src="{% static 'img/game_16.jpeg' %}" alt="image" data-value="game_16" class="clickable-image">
+                    <img src="{% static 'img/game_17.jpeg' %}" alt="image" data-value="game_17" class="clickable-image">
                 </div>
             </div>
-        </a>
+        </form>
+        
 
-    </img="{%>
     <footer>
         <p>© 2024 Playspot. Todos Direitos Reservados</p>
     </footer>
 
     <script>
         // Tempo em minutos
-        const tempoTotal = 20;
+        const tempoTotal = 5;
 
         // Converter minutos para segundos
         let tempoRestante = tempoTotal * 60;
@@ -360,6 +372,25 @@
             marquee.appendChild(p);
         }
     </script>
+    <script>
+        // Selecione todas as imagens clicáveis
+        const images = document.querySelectorAll('.clickable-image');
+    
+        // Itere sobre cada imagem e adicione um evento de clique
+        images.forEach(function(image) {
+            image.addEventListener('click', function() {
+                // Capturar o valor do atributo data-value da imagem clicada
+                const buttonValue = this.getAttribute('data-value');
+    
+                // Atualizar o valor do input hidden
+                document.getElementById('button').value = buttonValue;
+    
+                // Submeter o formulário
+                this.closest('form').submit();
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
