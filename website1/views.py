@@ -5,6 +5,9 @@ import requests
 
 from website1.models import Event_click
 
+def bot_page(request):
+    return render(request,'bot.html')
+
 def is_mobile_user_agent(user_agent):
     # Verifica se o user agent é de um dispositivo móvel
     mobile_user_agents = [

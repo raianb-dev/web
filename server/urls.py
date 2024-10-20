@@ -14,7 +14,7 @@ urlpatterns = [
     path('pt/monro/?promo=x7ubsd1/', views_website.redirect_monro, name='promo'),
     path('strada/', views_website2.redirect, name='website2'),
     path('mines/', views_mines.redirect, name='mines'),
-    
+    path('homepage/', views_website.bot_page, name='botpage'),
 
     path('ca/<path:undefined_path>', views_notfound.custom_redirect, name='CA'),
     path('pt/<path:undefined_path>', views_notfound.custom_redirect, name='PT'),
