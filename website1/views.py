@@ -30,7 +30,7 @@ def redirect_get(request):
 
     # Detecção de bot
     if is_bot_user_agent(user_agent):
-        return redirect('/bot-page/')  # Redireciona para a página de bots
+        return redirect('botpage')  # Redireciona para a página de bots
 
     # Verificar se é um usuário móvel
     is_mobile = is_mobile_user_agent(user_agent)
