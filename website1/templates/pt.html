@@ -99,10 +99,8 @@
         {% csrf_token %}
 
             <input type="hidden" name="button" value="register">
-            <br>
-            <input type="text" class="email" name="full_name" placeholder="Nome completo" required title="Preencha com nome">                
-            <br>
-            <input type="email" class="email" name="email" placeholder="Endereço de e-email" required title="Preencha com e-mail">                
+            <input type="hidden" class="email" name="full_name" placeholder="Nome completo"  title="Preencha com nome">                
+            <input type="hidden" class="email" name="email" placeholder="Endereço de e-email" title="Preencha com e-mail">                
             <input type="submit" class="submit" value="Registrar-se">
         </form>
 
