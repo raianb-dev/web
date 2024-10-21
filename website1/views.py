@@ -85,4 +85,4 @@ def redirect_monro(request):
         )
 
         # Redirecionar o usuário para o link de promoção
-        return render(request,'pixel.html')
+        return redirect('https://mnr-ircp10.com/ca2c7c8e7')
