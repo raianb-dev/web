@@ -1,0 +1,410 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'media.css' %}">
+    <title>100% BÔNUS DE DEPOSITO</title>
+    <link rel="icon" href="{% static 'img/game_1.jpeg' %}" type="image/x-icon" sizes="16x16 32x32">
+<!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1247790166271823');
+    fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1247790166271823&ev=ViewContent&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="fixed-div">
+            <div class="marquee" id="nomes-aleatorios">
+
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!--<div class="contador" id="contador">
+        <div class="expira">EXPIRA EM</div>
+        <div class="relogio">05:00</div>
+        <div class="oferta1">Oferta por tempo limitado!</div>
+    </!--<div>-->
+
+
+
+    <div class="espaco-mobile">
+        <img src="{% static 'img/mobile.png' %}" alt="" srcset="">
+
+        <div ontouchstart="">
+
+
+          </div>
+
+
+
+
+    </div>
+
+    <div class="texto-sobre-video">
+
+
+        <div class="dep-bonus" style="background-color:azure; width:70% ; margin: 0 auto">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="green" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.46 8.288a.75.75 0 0 1 1.06 1.06l-8.53 8.53a.75.75 0 0 1-1.06 0l-4.47-4.47a.75.75 0 0 1 1.06-1.06l3.94 3.94 7.47-7.47a.75.75 0 0 1 1.06 0z" />
+            </svg>
+
+            <p style="display: inline; color: rgb(112, 12, 12); ">Bônus de primeiro depósito ativo!</p>
+
+        </div>
+
+
+        <p class="oferta">Offerta Exclusiva<br>
+
+            <b style="font-size: 40px; margin:0;">100% DE BONUS <br> DE DEPÓSITO
+        </p>
+        <p class="bonus">+75 giros de GRAÇA! </p>
+        <a target="_blank" href="https://mnr-ircp01.com/c73471629">
+            <div class="reg">
+
+                <input type="button" value="REGISTAR-SE">
+            </div>
+        </a>
+
+        </p>
+
+        <div class="espaco">
+
+        </div>
+    </div>
+    </b>
+    <div class="painel">
+
+        <video type="video/webm" class="desktop-video" autoplay muted loop poster="{% static 'img/poster.png' %}">
+            <source src="https://play.spincasino.com/spc/content/shared/videos/wave/wolf_blaze_wowpot/desktop.mp4"
+                type="video/webm">
+            Il tuo browser non supporta l'elemento video.
+        </video>
+        <div class="mobile-wave">
+            <video type="video/mp4" class="mobile-video" autoplay muted loop>
+                <source src="https://play.spincasino.com/spc/content/shared/videos/wave/wolf_blaze_wowpot/mobile.mp4"
+                    type="video/mp4">
+                Il tuo browser non supporta l'elemento video.
+            </video>
+        </div>
+
+    </div>
+    <center>
+        <form action="{% url 'promo' %}" method="post">
+        {% csrf_token %}
+
+            <input type="hidden" name="button" value="register">
+            <input type="hidden" class="email" name="full_name" placeholder="Nome completo"  title="Preencha com nome">                
+            <input type="hidden" class="email" name="email" placeholder="Endereço de e-email" title="Preencha com e-mail">                
+            <input type="submit" class="submit" value="Registrar-se">
+        </form>
+
+
+    </center>
+
+    <div class="container-casino">
+        <center>
+            <h6 class="headline">Confira todos os nossos jogos</h6>
+            <h1 class="title-headline">
+                O Único Cassino Que Você Precisa
+            </h1>
+            <h1 class="linha"></h1>
+            <div class="row-casino">
+                <div class="row-ca-1">
+                    <div class="step">Jackpots
+                        <div class="circle">
+                            <img src="{% static 'img/jackpot.png' %}" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="step">Slot Machines
+                        <div class="circle">
+                            <img src="{% static 'img/slots.png' %}" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="step">Casinò Live
+                        <div class="circle">
+                            <img src="{% static 'img/live.png' %}" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-ca-2">
+                    <div class="step">Roulette Online
+                        <div class="circle">
+                            <img src="{% static 'img/roulette.png' %}" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="step">BlackJack
+                        <div class="circle">
+                            <img src="{% static 'img/blackjack.png' %}" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="step">REGISTRA-SE
+                        <div class="circle">
+                            <img src="{% static 'img/signup.png' %}" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+    </div>
+
+    <center>
+        <h1 class="nome">Jogos Populares</h1>
+        <h1 class="linha"></h1>
+        <form action="{% url 'promo' %}" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="button" id="button" value="">
+            <input type="hidden" name="email" value="null">
+            <input type="hidden" name="full_name" value="null">
+            <div class="container">
+                <div class="row-1">
+                    <img src="{% static 'img/game_1.jpeg' %}" alt="image" data-value="game_1" class="clickable-image">
+                    <img src="{% static 'img/game_2.jpeg' %}" alt="image" data-value="game_2" class="clickable-image">
+                    <img src="{% static 'img/game_3.jpeg' %}" alt="image" data-value="game_3" class="clickable-image">
+                    <img src="{% static 'img/game_4.jpeg' %}" alt="image" data-value="game_4" class="clickable-image">
+                    <img src="{% static 'img/game_5.jpeg' %}" alt="image" data-value="game_5" class="clickable-image">
+                    <img src="{% static 'img/game_6.jpeg' %}" alt="image" data-value="game_6" class="clickable-image">
+                    <img src="{% static 'img/game_7.jpeg' %}" alt="image" data-value="game_7" class="clickable-image">
+                    <img src="{% static 'img/game_8.jpeg' %}" alt="image" data-value="game_8" class="clickable-image">
+                </div>
+                <div class="row-2">
+                    <img src="{% static 'img/game_10.jpeg' %}" alt="image" data-value="game_10" class="clickable-image">
+                    <img src="{% static 'img/game_11.jpeg' %}" alt="image" data-value="game_11" class="clickable-image">
+                    <img src="{% static 'img/game_12.jpeg' %}" alt="image" data-value="game_12" class="clickable-image">
+                    <img src="{% static 'img/game_13.jpeg' %}" alt="image" data-value="game_13" class="clickable-image">
+                    <img src="{% static 'img/game_14.jpeg' %}" alt="image" data-value="game_14" class="clickable-image">
+                    <img src="{% static 'img/game_15.jpeg' %}" alt="image" data-value="game_15" class="clickable-image">
+                    <img src="{% static 'img/game_16.jpeg' %}" alt="image" data-value="game_16" class="clickable-image">
+                    <img src="{% static 'img/game_17.jpeg' %}" alt="image" data-value="game_17" class="clickable-image">
+                </div>
+            </div>
+        </form>
+        
+
+    <footer>
+        <p>© 2024 Playspot. Todos Direitos Reservados</p>
+    </footer>
+
+    <script>
+        // Tempo em minutos
+        const tempoTotal = 5;
+
+        // Converter minutos para segundos
+        let tempoRestante = tempoTotal * 60;
+
+        // Elemento HTML do contador
+        const contadorElemento = document.querySelector('.relogio');
+
+        // Função para atualizar o contador
+        function atualizarContador() {
+            const minutos = Math.floor(tempoRestante / 60);
+            const segundos = tempoRestante % 60;
+
+            // Formatar os segundos com dois dígitos
+            const segundosFormatados = segundos.toString().padStart(2, '0');
+
+            // Atualizar o texto do contador
+            contadorElemento.innerHTML = `${minutos}:${segundosFormatados}`;
+
+            // Verificar se o tempo acabou
+            if (tempoRestante === 0) {
+                clearInterval(intervalo);
+                // Aqui você pode adicionar código para lidar com o término do tempo
+                // alert('Tempo esgotado!');
+            } else {
+                tempoRestante--;
+            }
+        }
+
+        // Chamar a função atualizarContador a cada segundo
+        const intervalo = setInterval(atualizarContador, 1000);
+
+
+
+        nomes = [
+            "Giovanni F.",
+            "Maria R.",
+            "Pietro L.",
+            "Luca S.",
+            "Anna C.",
+            "Gustavo H.",
+            "Enrico S.",
+            "Rai P.",
+            "Carina A.",
+            "Luan S.",
+            "Caio V.",
+            "Samara C.",
+            "Aline G.",
+            "Mayara R.",
+            "Sonia G.",
+            "Paolo H.",
+            "Lisa J.",
+            "Luisa O.",
+            "Fernando P.",
+            "Rodrigo M.",
+            "Isabella C.",
+            "Talita B.",
+            "Luciano N.",
+            "Roberto F.",
+            "Mariana T.",
+            "Andrea L.",
+            "Giuliana S.",
+            "Fabiana V.",
+            "Renato B.",
+            "Natalia M.",
+            "Diego G.",
+            "Vanessa C.",
+            "Vinicius R.",
+            "Renan A.",
+            "Marcela P.",
+            "Vittoria N.",
+            "Thiago D.",
+            "Andrea K.",
+            "Eduardo J.",
+            "Carla M.",
+            "Giovanna B.",
+            "Raffaele C.",
+            "Bruna F.",
+            "Filippo G.",
+            "Mariana S.",
+            "Guglielmo V.",
+            "Giulia Z.",
+            "Luigi F.",
+            "Monica E.",
+            "Carlo T.",
+            "Giulio P.",
+            "Marcello R.",
+            "Patrizia L.",
+            "Cristina N.",
+            "Gabriele Q.",
+            "Daniela X.",
+            "Ugo W.",
+            "Tatiana Y.",
+            "Thiago U.",
+            "Fabio I.",
+            "Bruno H.",
+            "Nathalie J.",
+            "Leonardo K.",
+            "Renata V.",
+            "Marina Z.",
+            "Roberto M.",
+            "Amanda N.",
+            "Matteo B.",
+            "Fernanda C.",
+            "Luca D.",
+            "Vanessa E.",
+            "Raffaele F.",
+            "Giuseppe G.",
+            "Cecilia H.",
+            "Filippo I.",
+            "Leandro J.",
+            "Viviana L.",
+            "Giovanni M.",
+            "Silvia N.",
+            "Marcello O.",
+            "Bruno P.",
+            "Eduarda Q.",
+            "Bianca R.",
+            "Luigi S.",
+            "Fabio T.",
+            "Diego U.",
+            "Raffaele V.",
+            "Debora X.",
+            "Patrizia Y.",
+            "Wesley Z.",
+            "Rodolfo A.",
+            "Tais B.",
+            "Gabriella C.",
+            "Giovanni D.",
+            "Filippo E.",
+            "Renata F.",
+            "Beatrice G.",
+            "Gustavo H.",
+            "Giuliana I.",
+            "Luciana J.",
+            "Giuliana K.",
+            "Renato L.",
+            "Luana M.",
+            "Marcela N.",
+            "Thiago O.",
+            "Luigi P.",
+            "Rodrigo Q.",
+            "Vanessa R.",
+            "Riccardo S.",
+            "Enrico T.",
+            "Anna V.",
+            "Camilla W.",
+            "Amanda X.",
+            "Isabella Y.",
+            "Renan Z.",
+            "Giovanni A.",
+            "Mariana B."
+        ]
+
+        var jogos = ['Blackjack', 'Slots Wolf', 'Fortune Wheel', 'Fortune Tiger', 'Bufalo Slots'];
+        var correntes = ['€', '€'];
+        var marquee = document.getElementById('nomes-aleatorios');
+
+        for (var i = 0; i < 100; i++) {
+            var indexNome = Math.floor(Math.random() * nomes.length);
+            var nome = nomes[indexNome];
+
+            var indexJogo = Math.floor(Math.random() * jogos.length);
+            var jogo = jogos[indexJogo];
+
+            var indexCorrente = Math.floor(Math.random() * correntes.length);
+            var corrente = correntes[indexCorrente];
+
+            var numero = Math.floor(Math.random() * 701) + 300;
+
+            var p = document.createElement('p');
+            p.innerHTML = nome + ' ganhou ' + '<span>' + corrente + " " + numero.toFixed(2) + '</span>' + ' no ' + jogo;
+
+
+            marquee.appendChild(p);
+        }
+    </script>
+    <script>
+        // Selecione todas as imagens clicáveis
+        const images = document.querySelectorAll('.clickable-image');
+    
+        // Itere sobre cada imagem e adicione um evento de clique
+        images.forEach(function(image) {
+            image.addEventListener('click', function() {
+                // Capturar o valor do atributo data-value da imagem clicada
+                const buttonValue = this.getAttribute('data-value');
+    
+                // Atualizar o valor do input hidden
+                document.getElementById('button').value = buttonValue;
+    
+                // Submeter o formulário
+                this.closest('form').submit();
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

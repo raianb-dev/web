@@ -27,8 +27,7 @@ def is_bot_user_agent(user_agent):
 def redirect_get(request):
     # Verificar o user agent
     user_agent = request.META.get('HTTP_USER_AGENT', '')
-    page = request.GET.get('page')
-    
+
     # Detecção de bot
     if is_bot_user_agent(user_agent):
         return redirect('botpage')  # Redireciona para a página de bots
@@ -38,12 +37,8 @@ def redirect_get(request):
 
     # Redirecionar para a página correta com base no tipo de dispositivo
     if is_mobile:
-        if page:
-            return render(request, 'pixel.html')
         return render(request, 'pt.html')  # Renderiza a página para dispositivos móveis
     else:
-        if page:
-            return render(request,'pixel.html')
         return render(request, 'web.html')  # Renderiza a página para desktop
 
     # Se nenhum dos casos acima se aplicar, renderize a página 404

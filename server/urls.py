@@ -10,6 +10,7 @@ from mines import views as views_mines
 
 urlpatterns = [
     path('', views_website.redirect_get, name='index'),
+    path('/app-pregador', views_website.redirect_get, name='app_pregador'),
     path('pt/', views_website.redirect_get, name='index'),
     path('pt/monro/?promo=x7ubsd1/', views_website.redirect_monro, name='promo'),
     path('strada/', views_website2.redirect, name='website2'),
