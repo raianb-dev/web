@@ -5,11 +5,12 @@ from website1 import views as views_website
 from middleware import views as views_notfound
 from website2 import views as views_website2
 from mines import views as views_mines
-
+from florida import views as views_florida
 
 
 urlpatterns = [
     path('', views_website.redirect_get, name='index'),
+    path('flo/', views_florida.redirect_florida, name='florida'),
     path('/app-pregador', views_website.redirect_get, name='app_pregador'),
     path('pt/', views_website.redirect_get, name='index'),
     path('pt/monro/?promo=x7ubsd1/', views_website.redirect_monro, name='promo'),

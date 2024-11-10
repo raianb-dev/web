@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'website1',
     'website2',
     'middleware',
-    'mines'
+    'mines',
+    'florida'
 ]
 
 MIDDLEWARE = [
